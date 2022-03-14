@@ -2,17 +2,23 @@ const books = [
 {
   title: 'Gifted hands',
   author: 'Ben Carson',
-  b
+  button: 'Remove',
+  line:    'hr'
 },
 
 {
   title: 'Gifted hands',
   author: 'Ben Carson',
+  button: 'Remove',
+  line:    'hr'
 },
 
 {
   title: 'Gifted hands',
   author: 'Ben Carson',
+  button: 'Remove',
+  line:    'hr'
 },
 
 ]
+
