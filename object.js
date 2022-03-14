@@ -24,7 +24,7 @@ const bookList = [
 
 const collection = document.getElementById('books');
 
-bookList.forEach(book, index), => {
+bookList.forEach((book, index) => {
   const element = document.createElement('div');
   element.classList.add('item');
 
@@ -33,5 +33,15 @@ bookList.forEach(book, index), => {
     <p>${bookList[index].author}</p>
     <button type="button">${bookList[index].button}</button>
     <${bookList[index].line}>
-  `
-}
+  `;
+  collection.appendChild(element);
+  
+});
+
+const addBook = document.querySelector('.adding');
+addBook.textContent = 'Add';
+addBook.addEventListener('click', => {
+
+});
+
+for (let i = 0; i < )
