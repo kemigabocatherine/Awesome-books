@@ -1,5 +1,3 @@
-const { createElement } = require("parse5/lib/tree-adapters/default");
-
 const bookList = [
   {
     title: 'Gifted hands',
@@ -44,6 +42,7 @@ const addBook = document.querySelector('.adding');
 addBook.textContent = 'Add';
 addBook.addEventListener('click',() => {
   const newDiv = document.createElement('div');
+
   const newTitle = document.getElementById('new-title').value;
   const newAuthor = document.getElementById('new-author').value;
 
@@ -68,3 +67,12 @@ addBook.addEventListener('click',() => {
   collection.appendChild(newDiv)
 });
 
+const removeBtn = document.querySelector('delete');
+removeBtn.addEventListener('click', () => {
+
+  if(target.classList.contains('delete')){
+    if(confirm('Are you sure?')){
+        var div = target.parentElement;
+        collection.removeChild(div);
+    }
+  }
