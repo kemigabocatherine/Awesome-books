@@ -19,7 +19,6 @@ const bookList = [
     button: 'Remove',
     line: 'hr',
   },
-
 ];
 
 const collection = document.getElementById('books');
@@ -35,12 +34,11 @@ bookList.forEach((book, index) => {
     <${bookList[index].line}>
   `;
   collection.appendChild(element);
-  
 });
 
 const addBook = document.querySelector('.adding');
 addBook.textContent = 'Add';
-addBook.addEventListener('click',() => {
+addBook.addEventListener('click', () => {
   const newDiv = document.createElement('div');
 
   const newTitle = document.getElementById('new-title').value;
@@ -54,7 +52,7 @@ addBook.addEventListener('click',() => {
 
   const remove = document.createElement('button');
   remove.classList.add('delete');
-  remove.setAttribute('type','button');
+  remove.setAttribute('type', 'button');
   remove.appendChild(document.createTextNode('Remove'));
 
   const bottomLine = document.createElement('hr');
@@ -64,15 +62,15 @@ addBook.addEventListener('click',() => {
   newDiv.appendChild(remove);
   newDiv.appendChild(bottomLine);
 
-  collection.appendChild(newDiv)
+  collection.appendChild(newDiv);
 });
 
 const removeBtn = document.querySelector('delete');
 removeBtn.addEventListener('click', () => {
-
-  if(target.classList.contains('delete')){
-    if(confirm('Are you sure?')){
-        var div = target.parentElement;
-        collection.removeChild(div);
+  if (target.classList.contains('delete')) {
+    if (confirm('Are you sure?')) {
+      var div = target.parentElement;
+      collection.removeChild(div);
     }
   }
+});
