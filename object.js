@@ -7,7 +7,6 @@ if (!localStorage.getItem('listOfBooks')) {
 }
 
 const removeBtn = (title,author)=>{
-  const newBook={title,author};
   bookList.remove(newBook)}
   localStorage.setItem('listOfBooks', JSON.stringify(bookList));
 
