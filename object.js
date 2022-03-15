@@ -63,14 +63,23 @@ addBook.addEventListener('click', () => {
   newDiv.appendChild(bottomLine);
 
   collection.appendChild(newDiv);
+  remove.addEventListener('click', (e) => {
+    if (e.target.classList.contains('delete')) {
+      if (confirm('Are you sure?')) {
+        e.target.parentElement.remove();
+      }
+    }
+  });
 });
 
-const removeBtn = document.querySelector('delete');
-removeBtn.addEventListener('click', () => {
-  if (target.classList.contains('delete')) {
-    if (confirm('Are you sure?')) {
-      var div = target.parentElement;
-      collection.removeChild(div);
+const removeBtns = document.querySelectorAll('.delete');
+removeBtns.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    if (e.target.classList.contains('delete')) {
+      if (confirm('Are you sure?')) {
+        var div = e.target.parentElement;
+        div.remove();
+      }
     }
-  }
+  });
 });
