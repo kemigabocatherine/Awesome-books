@@ -1,21 +1,22 @@
 let bookList = [];
 
-
 if (!localStorage.getItem('listOfBooks')) {
-  localStorage.setItem('listOfBooks', JSON.stringify([])); 
-} else { bookList= JSON.parse(localStorage.getItem('listOfBooks'));
+  localStorage.setItem('listOfBooks', JSON.stringify([]));
+} else {
+  bookList = JSON.parse(localStorage.getItem('listOfBooks'));
 }
 
-const removeBtn = (title,author)=>{
-  bookList.remove(newBook)}
-  localStorage.setItem('listOfBooks', JSON.stringify(bookList));
+const removeBtn = (title, author) => {
+  const newBook = { title, author };
+  bookList.remove(newBook);
+};
+localStorage.setItem('listOfBooks', JSON.stringify(bookList));
 
-const updateData = (title,author)=>{
-  const newBook={title,author};
-  bookList.push(newBook); 
-  localStorage.setItem('listOfBooks', JSON.stringify(bookList)); 
-  console.log(bookList);
-} 
+const updateData = (title, author) => {
+  const newBook = { title, author };
+  bookList.push(newBook);
+  localStorage.setItem('listOfBooks', JSON.stringify(bookList));
+};
 
 const collection = document.getElementById('books');
 
@@ -39,9 +40,9 @@ addBook.addEventListener('click', () => {
 
   const newTitle = document.getElementById('new-title').value;
   const newAuthor = document.getElementById('new-author').value;
-  
+
   updateData(newTitle, newAuthor);
-  removeBtn(newTitle,newAuthor);
+  removeBtn(newTitle, newAuthor);
 
   const heading = document.createElement('h4');
   heading.appendChild(document.createTextNode(newTitle));
@@ -64,9 +65,7 @@ addBook.addEventListener('click', () => {
   collection.appendChild(newDiv);
   remove.addEventListener('click', (e) => {
     if (e.target.classList.contains('delete')) {
-      if (confirm('Are you sure?')) {
-        e.target.parentElement.remove();
-      }
+      e.target.parentElement.remove();
     }
   });
 });
@@ -75,11 +74,9 @@ const removeBtns = document.querySelectorAll('.delete');
 removeBtns.forEach((button) => {
   button.addEventListener('click', (e) => {
     if (e.target.classList.contains('delete')) {
-      if (confirm('Are you sure?')) {
-        var div = e.target.parentElement;
-        div.remove();
-        window.localStorage.setItem('listOfBooks', JSON.stringify(bookList));
-      }
+      const div = e.target.parentElement;
+      div.remove();
+      window.localStorage.setItem('listOfBooks', JSON.stringify(bookList));
     }
   });
 });
