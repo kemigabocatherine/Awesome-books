@@ -1,14 +1,15 @@
 let bookList = [];
 
 
-
-if (!localStorage.getItem('listOfBooks')) { 
+if (!localStorage.getItem('listOfBooks')) {
   localStorage.setItem('listOfBooks', JSON.stringify([])); 
 } else { bookList= JSON.parse(localStorage.getItem('listOfBooks'));
-} 
+}
+
 const removeBtn = (title,author)=>{
-  bookList.reomve(newBook)}
-  localStorage.getItem('listOfBooks', JSON.stringify(bookList));
+  const newBook={title,author};
+  bookList.remove(newBook)}
+  localStorage.setItem('listOfBooks', JSON.stringify(bookList));
 
 const updateData = (title,author)=>{
   const newBook={title,author};
@@ -41,6 +42,7 @@ addBook.addEventListener('click', () => {
   const newAuthor = document.getElementById('new-author').value;
   
   updateData(newTitle, newAuthor);
+  removeBtn(newTitle,newAuthor);
 
   const heading = document.createElement('h4');
   heading.appendChild(document.createTextNode(newTitle));
@@ -82,10 +84,3 @@ removeBtns.forEach((button) => {
     }
   });
 });
-
-const data = 'books';
-
-// for (let k = 0; k < bookList.length; k =+ 1) {
-window.localStorage.setItem('listOfBooks', JSON.stringify(bookList));
-// }
-// window.location.reload();
