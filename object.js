@@ -1,25 +1,21 @@
-const bookList = [
-  {
-    title: 'Gifted hands',
-    author: 'Ben Carson',
-    button: 'Remove',
-    line: 'hr',
-  },
+let bookList = [];
 
-  {
-    title: 'Gifted hands',
-    author: 'Ben Carson',
-    button: 'Remove',
-    line: 'hr',
-  },
 
-  {
-    title: 'Gifted hands',
-    author: 'Ben Carson',
-    button: 'Remove',
-    line: 'hr',
-  },
-];
+
+if (!localStorage.getItem('listOfBooks')) { 
+  localStorage.setItem('listOfBooks', JSON.stringify([])); 
+} else { bookList= JSON.parse(localStorage.getItem('listOfBooks'));
+} 
+const removeBtn = (title,author)=>{
+  bookList.reomve(newBook)}
+  localStorage.getItem('listOfBooks', JSON.stringify(bookList));
+
+const updateData = (title,author)=>{
+  const newBook={title,author};
+  bookList.push(newBook); 
+  localStorage.setItem('listOfBooks', JSON.stringify(bookList)); 
+  console.log(bookList);
+} 
 
 const collection = document.getElementById('books');
 
@@ -43,6 +39,8 @@ addBook.addEventListener('click', () => {
 
   const newTitle = document.getElementById('new-title').value;
   const newAuthor = document.getElementById('new-author').value;
+  
+  updateData(newTitle, newAuthor);
 
   const heading = document.createElement('h4');
   heading.appendChild(document.createTextNode(newTitle));
@@ -79,7 +77,15 @@ removeBtns.forEach((button) => {
       if (confirm('Are you sure?')) {
         var div = e.target.parentElement;
         div.remove();
+        window.localStorage.setItem('listOfBooks', JSON.stringify(bookList));
       }
     }
   });
 });
+
+const data = 'books';
+
+// for (let k = 0; k < bookList.length; k =+ 1) {
+window.localStorage.setItem('listOfBooks', JSON.stringify(bookList));
+// }
+// window.location.reload();
