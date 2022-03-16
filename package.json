@@ -1,0 +1,21 @@
+{
+  "name": "Awesome-books",
+  "version": "1.0.0",
+  "description": "> Description the project.",
+  "main": "object.js",
+  "scripts": {
+    "start": "live-server index.html", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kemigabocatherine/Awesome-books.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kemigabocatherine/Awesome-books/issues"
+  },
+  "homepage": "https://github.com/kemigabocatherine/Awesome-books#readme"
+}
