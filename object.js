@@ -1,4 +1,19 @@
-const books = [];
+/* eslint-disable no-use-before-define */
+let books = [];
+const renderBooks = (books) => {
+  const bookList = document.getElementById('book-list');
+  bookList.innerHTML = '';
+  books.forEach((book) => {
+    addBook(book.title, book.author);
+  });
+};
+
+const deleteBook = (bookTitle) => {
+  const result = books.filter((book) => book.title !== bookTitle);
+  books = result;
+  localStorage.setItem('books', JSON.stringify(books));
+  renderBooks(books);
+};
 
 if (localStorage.getItem('books')) {
   books = JSON.parse(localStorage.getItem('books'));
@@ -24,21 +39,6 @@ const addBook = (title, author) => {
 
   book.append(bookTitle, bookAuthor, removeBtn, bookHr);
   bookList.append(book);
-};
-
-const deleteBook = (bookTitle) => {
-  const result = books.filter((book) => book.title !== bookTitle);
-  books = result;
-  localStorage.setItem('books', JSON.stringify(books));
-  renderBooks(books);
-};
-
-const renderBooks = (books) => {
-  const bookList = document.getElementById('book-list');
-  bookList.innerHTML = '';
-  books.forEach((book) => {
-    addBook(book.title, book.author);
-  });
 };
 
 const addBookBtnHandler = (e) => {
