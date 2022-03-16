@@ -6,21 +6,6 @@ if (localStorage.getItem('books')) {
 
 const addBookBtn = document.getElementById('add-book');
 
-const renderBooks = (books) => {
-  const bookList = document.getElementById('book-list');
-  bookList.innerHTML = '';
-  books.forEach((book) => {
-    addBook(book.title, book.author);
-  });
-};
-
-const deleteBook = (bookTitle) => {
-  const result = books.filter((book) => book.title !== bookTitle);
-  books = result;
-  localStorage.setItem('books', JSON.stringify(books));
-  renderBooks(books);
-};
-
 const addBook = (title, author) => {
   const bookList = document.getElementById('book-list');
   const book = document.createElement('div');
@@ -39,6 +24,21 @@ const addBook = (title, author) => {
 
   book.append(bookTitle, bookAuthor, removeBtn, bookHr);
   bookList.append(book);
+};
+
+const deleteBook = (bookTitle) => {
+  const result = books.filter((book) => book.title !== bookTitle);
+  books = result;
+  localStorage.setItem('books', JSON.stringify(books));
+  renderBooks(books);
+};
+
+const renderBooks = (books) => {
+  const bookList = document.getElementById('book-list');
+  bookList.innerHTML = '';
+  books.forEach((book) => {
+    addBook(book.title, book.author);
+  });
 };
 
 const addBookBtnHandler = (e) => {
