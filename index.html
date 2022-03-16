@@ -1,40 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="object.js" defer></script>
-  <title>Awesome books</title>
-</head>
-<body>
-  <section id="books">
-    <h1>Awesome books</h1>
-
-  <!-- <div>
-    <h1>Awesome books</h1>
-  <h4>Lorem ipsum</h4>
-  <p>Gifted Hands</p>
-  <button type="button">Remove</button>
-  <hr>
-  </div>
-  <div id="more-books">
-
-  </div>
-  <div>
-    <h1>A Tale of two cities</h1>
-  <h4>Lorem ipsum</h4>
-  <p>Gifted Hands</p>
-  <button type="button">Remove</button>
-  <hr>
-  </div> -->
-  </section>
-  <input type="text" id="new-title" placeholder="Title">
-  <br>
-  <br>
-  <input type="text" id="new-author" placeholder="Author">
-  <br>
-  <br>
-  <button class="adding" type="button">Add</button>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Awesome Books</title>
+  </head>
+  <body>
+    <h1>Awesome Books</h1>
+    <div>
+      <div id="book-list"></div>
+      <form>
+        <input type="text" placeholder="Book Title" id="title" /><br />
+        <input type="text" placeholder="Author" id="author" /><br />
+        <button id="add-book">Add</button>
+      </form>
+    </div>
+    <script src="object.js"></script>
+  </body>
 </html>
