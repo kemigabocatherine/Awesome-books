@@ -1,4 +1,4 @@
-let books = [];
+const books = [];
 
 if (localStorage.getItem('books')) {
   books = JSON.parse(localStorage.getItem('books'));
