@@ -48,7 +48,7 @@ const addBookBtnHandler = (e) => {
   const bookAuthorInput = document.getElementById('author');
   id += 1;
   const bookObject = {
-    id: id,
+    id,
     title: bookTitleInput.value,
     author: bookAuthorInput.value,
   };
