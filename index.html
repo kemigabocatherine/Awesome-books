@@ -8,13 +8,22 @@
     <title>Awesome Books</title>
   </head>
   <body>
-    <h1>Awesome Books</h1>
-    <div>
-      <div id="book-list"></div>
-      <form>
-        <input type="text" placeholder="Book Title" id="title" /><br />
-        <input type="text" placeholder="Author" id="author" /><br />
-        <button id="add-book">Add</button>
+    <div id="books-collection">
+      <h1>All awesome books</h1>
+    </div>
+    <hr>
+    <div class="form">
+      <h2>Add a new book</h2>
+      <form id="book-form">
+        <div class="form-group">
+          <input type="text" id="new-title" placeholder="Title" class="form-control">
+        </div>
+        <br>
+        <div class="form-group">
+          <input type="text" id="new-author" placeholder="Author" class="form-control">
+        </div>
+        <br>
+        <button class="adding" type="button" id="add">Add</button>
       </form>
     </div>
     <script src="object.js"></script>
