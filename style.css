@@ -1,7 +1,38 @@
 * {
-  margin: 0 auto;
+  margin: 0;
 }
 
 h1 {
   color: black;
+}
+
+body {
+  text-align: center;
+  font-family: 'Comic Neue', cursive;
+}
+
+#books-collection {
+  border: 2px solid black;
+  padding: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1rem;
+  background-color: gray;
+}
+
+hr {
+  background-color: black;
+  width: 90px;
+  margin: 0 auto;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid red;
+}
+
+.adding {
+  margin-left: 9rem;
 }
