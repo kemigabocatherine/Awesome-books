@@ -1,16 +1,16 @@
 /* eslint-disable max-classes-per-file */
 // Book class
 class Book {
-  constructor(title, author, button) {
+  constructor(title, author) {
     this.title = title;
     this.author = author;
-    this.button = 'Remove';
   }
 }
 
 // Main Class
 class Main {
   static displayBooks() {
+    // eslint-disable-next-line no-use-before-define
     const books = Store.getBooks();
 
     books.forEach((book) => Main.addBookToList(book));
@@ -21,10 +21,11 @@ class Main {
 
     const element = document.createElement('div');
     element.classList.add('item');
+    element.setAttribute('id', book.title);
 
     element.innerHTML = `
       <p id="author">${book.title} by ${book.author}</p>
-      <button type="button" class="delete">${book.button}</button>
+      <button type="button" class="delete">Remove</button>
     `;
 
     collection.appendChild(element);
@@ -64,11 +65,13 @@ class Store {
 
   static removeBook(index) {
     const books = Store.getBooks();
+    let counter = 0;
 
-    books.forEach((book, index) => {
-      if (book.index === index) {
-        books.splice(index, 1);
+    books.forEach((book) => {
+      if (book.title === index) {
+        books.splice(counter, 1);
       }
+      counter += 1;
     });
 
     localStorage.setItem('books', JSON.stringify(books));
@@ -106,5 +109,5 @@ document.querySelector('#books-collection').addEventListener('click', (e) => {
   Main.deleteBook(e.target);
 
   // from Store
-  Store.removeBook(e.target.parentElement(index));
+  Store.removeBook(e.target.parentElement.id);
 });
