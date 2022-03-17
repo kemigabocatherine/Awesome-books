@@ -4,17 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Lato&display=swap" rel="stylesheet"> 
     <title>Awesome Books</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Awesome Books</h1>
-    <div>
-      <div id="book-list"></div>
-      <form>
-        <input type="text" placeholder="Book Title" id="title" /><br />
-        <input type="text" placeholder="Author" id="author" /><br />
-        <button id="add-book">Add</button>
+    <h1>All awesome books</h1>
+    <div id="books-collection">
+      
+    </div>
+    <hr>
+    <div class="form">
+      <h2>Add a new book</h2>
+      <form id="book-form">
+        <div class="form-group">
+          <input type="text" id="new-title" placeholder="Title" class="form-control">
+        </div>
+        <br>
+        <div class="form-group">
+          <input type="text" id="new-author" placeholder="Author" class="form-control">
+        </div>
+        <br>
+        <div>
+          <button class="adding" type="button" id="add">Add</button>
+        </div>
       </form>
     </div>
     <script src="object.js"></script>
