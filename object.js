@@ -104,7 +104,4 @@ document.querySelector('#add').addEventListener('click', (e) => {
 document.querySelector('#books-collection').addEventListener('click', (e) => {
   // from Main
   Main.deleteBook(e.target);
-
-  // from Store
-  Store.removeBook(e.target.parentElement(index));
 });
