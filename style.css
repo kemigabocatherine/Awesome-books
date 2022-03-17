@@ -50,6 +50,13 @@ hr {
   background-color: #fff;
 }
 
+.delete {
+  margin-top: auto;
+  margin-bottom: auto;
+  vertical-align: middle;
+  height: 30px;
+}
+
 p {
   font-family: 'Comic Neue', cursive;
   font-weight: 600;
