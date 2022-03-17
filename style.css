@@ -1,9 +1,7 @@
-* {
-  margin: 0;
-}
-
 h1 {
   color: black;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 body {
@@ -13,26 +11,60 @@ body {
 
 #books-collection {
   border: 2px solid black;
-  padding: 1rem;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 1rem;
-  background-color: gray;
-}
-
-hr {
-  background-color: black;
-  width: 90px;
-  margin: 0 auto;
 }
 
 .item {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
-  border-bottom: 1px solid red;
+  font-size: 80px;
+}
+
+.item:nth-child(odd) {
+  background-color: rgba(231, 224, 224, 0.459);
+}
+
+hr {
+  background-color: black;
+  height: 1.5px;
+  width: 90px;
+  margin: 0 auto;
 }
 
 .adding {
-  margin-left: 9rem;
+  margin-left: 35%;
+  padding: 0.5% 2%;
+}
+
+.delete,
+.adding,
+.form-control {
+  border: 2px solid #000;
+  padding: 1% 2%;
+  font-family: 'Comic Neue', cursive;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+p {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.form-control {
+  width: 40%;
+}
+
+h2 {
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.form-control::placeholder {
+  color: black;
 }
