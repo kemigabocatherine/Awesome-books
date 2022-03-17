@@ -1,76 +1,7 @@
-h1 {
-  color: black;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-body {
-  text-align: center;
-  font-family: 'Comic Neue', cursive;
-}
-
-#books-collection {
-  border: 2px solid black;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 1rem;
-}
-
-.item {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem;
-  font-size: 80px;
-}
-
-.item:nth-child(odd) {
-  background-color: rgba(231, 224, 224, 0.459);
-}
-
-hr {
-  background-color: black;
-  height: 1.5px;
-  width: 90px;
+* {
   margin: 0 auto;
 }
 
-.adding {
-  margin-left: 35%;
-  padding: 0.5% 2%;
-}
-
-.delete,
-.adding,
-.form-control {
-  border: 2px solid #000;
-  padding: 1% 2%;
-  font-family: 'Comic Neue', cursive;
-  font-weight: 600;
-  font-size: 16px;
-  background-color: #fff;
-}
-
-.delete {
-  margin-top: auto;
-  margin-bottom: auto;
-  vertical-align: middle;
-}
-
-p {
-  font-family: 'Comic Neue', cursive;
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.form-control {
-  width: 40%;
-}
-
-h2 {
-  margin-top: 16px;
-  margin-bottom: 10px;
-}
-
-.form-control::placeholder {
+h1 {
   color: black;
 }

@@ -1,3 +1,4 @@
+// Book list
 /* eslint-disable no-use-before-define */
 let id = 0;
 let books = [];
@@ -62,3 +63,5 @@ const addBookBtnHandler = (e) => {
 addBookBtn.addEventListener('click', addBookBtnHandler);
 
 renderBooks(books);
+
+// Adding book form
