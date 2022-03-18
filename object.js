@@ -79,7 +79,7 @@ class Store {
 }
 
 // Event: Display Books
-document.addEventListener('DOMContentLoaded', Main.displayBooks);
+// document.addEventListener('DOMContentLoaded', Main.displayBooks);
 
 // Event: Add a Book
 document.querySelector('#add').addEventListener('click', (e) => {
@@ -111,3 +111,40 @@ document.querySelector('#books-collection').addEventListener('click', (e) => {
   // from Store
   Store.removeBook(e.target.parentElement.id);
 });
+
+// FULL WEBSITE
+// List
+const item1 = document.querySelector('#nav-item1');
+const bookSection = document.querySelector('#list');
+
+// Add new
+const item2 = document.querySelector('#nav-item2');
+const formSection = document.querySelector('.form');
+
+// Contact
+const item3 = document.querySelector('#nav-item3');
+const contactSection = document.querySelector('#contact');
+
+// list function
+item1.addEventListener('click', () => {
+  bookSection.style.display = 'block';
+  formSection.style.display = 'none';
+  contactSection.style.display = 'none';
+});
+
+// add new function
+item2.addEventListener('click', () => {
+  formSection.style.display = 'block';
+  bookSection.style.display = 'none';
+  contactSection.style.display = 'none';
+});
+
+// contact function
+item3.addEventListener('click', () => {
+  contactSection.style.display = 'block';
+  bookSection.style.display = 'none';
+  formSection.style.display = 'none';
+});
+
+const dayTime = document.querySelector('#date');
+dayTime.innerText = new Date();
