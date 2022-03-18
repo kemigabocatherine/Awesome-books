@@ -33,6 +33,8 @@ body {
 hr {
   background-color: black;
   margin: auto;
+  width: 1px;
+  height: 30px;
 }
 
 .adding {
