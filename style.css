@@ -14,6 +14,11 @@ body {
   margin: 1rem;
 }
 
+#author {
+  font-weight: 800;
+  font-size: 20px;
+}
+
 .item {
   display: flex;
   justify-content: space-between;
@@ -31,7 +36,7 @@ hr {
 }
 
 .adding {
-  margin-left: 35%;
+  margin-left: 38%;
   padding: 0.5% 2%;
 }
 
@@ -46,10 +51,18 @@ hr {
   background-color: #fff;
 }
 
+.button-div .adding {
+  border: 3px solid black;
+  font-size: 20px;
+  font-weight: 800;
+}
+
 .delete {
   margin-top: auto;
   margin-bottom: auto;
   vertical-align: middle;
+  font-size: 20px;
+  border: 3px solid black;
 }
 
 p {
@@ -60,6 +73,10 @@ p {
 
 .form-control {
   width: 40%;
+  border: 3px solid #000;
+  color: #000;
+  font-size: 18px;
+  font-weight: 800;
 }
 
 h2 {
@@ -71,18 +88,37 @@ h2 {
   color: black;
 }
 
+.form {
+  margin-top: 10rem;
+}
+
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-right: 0.5rem;
   border: 3px solid #000;
-  margin: 1rem 1rem 0 1rem;
+  margin-top: 1rem;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.page-heading {
+  padding-left: 0.5rem;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
   gap: 2rem;
+}
+
+.nav-list li {
+  color: black;
+  font-weight: 800;
+  font-size: 20px;
 }
 
 .list-item:hover,
@@ -97,11 +133,13 @@ footer p {
   font-size: 23px;
 }
 
-#date p {
+#date {
   display: flex;
   justify-content: flex-end;
   margin-right: 1rem;
   font-size: 18px;
+  padding-top: 1rem;
+  font-weight: 800;
 }
 
 #list,
@@ -124,12 +162,17 @@ footer p {
   font-size: 23px;
 }
 
+.contact_items {
+  margin: 0 auto;
+  width: 40%;
+}
+
 #contact-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 30rem;
   line-height: 0;
+  padding-left: 5rem;
 }
 
 #contact-info li p {
@@ -138,6 +181,12 @@ footer p {
 
 footer {
   border: 3px solid black;
-  margin: auto 1rem 1rem 1rem;
-  margin-top: 7rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 1rem;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 96%;
 }
