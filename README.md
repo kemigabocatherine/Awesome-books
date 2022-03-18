@@ -1,15 +1,20 @@
 # Awesome-books
 
-> Description the project.
+This is a project on a book list app that adds, removes and stores books in local storage.
 
 ## Built With
 
 - HTML, CSS & JS
-- Git & GIthub workflows
+- Git & Github workflows
+
+## Live Demo
+
+Click[here](https://kemigabocatherine.github.io/Awesome-books/) to view the page.
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
+To get a local copy up and running follow these simple example steps.
+
 - In your terminal, move the location you want to clone the project.
 - Enter git clone git@github.com:kemigabocatherine/Awesome-books.git.
 - cd to the repo.
@@ -17,22 +22,19 @@
 - Click on open live server.
 - And then Start working on your project
 
-
-To get a local copy up and running follow these simple example steps.
-
 ## Authors
 
 👤 **Have Samuel**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/)
+- Twitter: [@twitterhandle](https://twitter.com/home )
+- LinkedIn: [LinkedIn](https://www.linkedin.com/)
 
-👤 **Cathrine Kemigabo**
+👤 **Catherine Kemigabo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/kemigabocatherine)
+- Twitter: [@twitterhandle](https://twitter.com/home?lang=en)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/feed/)
 
 ## 🤝 Contributing
 

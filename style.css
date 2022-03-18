@@ -150,7 +150,7 @@ footer p {
 
 .contact-heading {
   font-size: 34px;
-  padding: 2rem 0 4rem 0;
+  padding: 2rem 0 2rem 0;
 }
 
 .paragraph1 {
@@ -164,7 +164,7 @@ footer p {
 
 .contact_items {
   margin: 0 auto;
-  width: 40%;
+  width: 500px;
 }
 
 #contact-info {
@@ -184,6 +184,7 @@ footer {
   margin-left: 2%;
   margin-right: 2%;
   margin-bottom: 1rem;
+  margin-top: 10px;
   text-align: center;
   position: fixed;
   left: 0;
