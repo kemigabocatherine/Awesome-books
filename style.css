@@ -10,10 +10,8 @@ body {
 }
 
 #books-collection {
-  border: 2px solid black;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 1rem;
+  border: 3px solid black;
+  margin: 1rem;
 }
 
 .item {
@@ -29,9 +27,7 @@ body {
 
 hr {
   background-color: black;
-  height: 1.5px;
-  width: 90px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .adding {
@@ -78,8 +74,8 @@ h2 {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  border: 2px solid #000;
+  padding: 0.5rem;
+  border: 3px solid #000;
   margin: 1rem 1rem 0 1rem;
 }
 
@@ -89,6 +85,18 @@ header {
   gap: 2rem;
 }
 
+.list-item:hover,
+.list-item1:hover,
+.list-item2:hover {
+  cursor: pointer;
+}
+
+footer p {
+  display: flex;
+  padding: 0 1rem;
+  font-size: 23px;
+}
+
 #date p {
   display: flex;
   justify-content: flex-end;
@@ -96,8 +104,9 @@ header {
   font-size: 18px;
 }
 
-#contact,
-#list {
+#list,
+.form,
+#contact {
   display: none;
 }
 
@@ -123,18 +132,12 @@ header {
   line-height: 0;
 }
 
-footer p {
-  display: flex;
-  padding: 0 1rem;
-  font-size: 23px;
-}
-
 #contact-info li p {
   font-size: 20px;
 }
 
 footer {
-  border: 2px solid black;
+  border: 3px solid black;
   margin: auto 1rem 1rem 1rem;
   margin-top: 7rem;
 }
