@@ -74,3 +74,67 @@ h2 {
 .form-control::placeholder {
   color: black;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 2px solid #000;
+  margin: 1rem 1rem 0 1rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+#date p {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+  font-size: 18px;
+}
+
+#contact,
+#list {
+  display: none;
+}
+
+.contact-heading {
+  font-size: 34px;
+  padding: 2rem 0 4rem 0;
+}
+
+.paragraph1 {
+  font-size: 22px;
+}
+
+.paragraph2 {
+  margin-right: 19rem;
+  font-size: 23px;
+}
+
+#contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 30rem;
+  line-height: 0;
+}
+
+footer p {
+  display: flex;
+  padding: 0 1rem;
+  font-size: 23px;
+}
+
+#contact-info li p {
+  font-size: 20px;
+}
+
+footer {
+  border: 2px solid black;
+  margin: auto 1rem 1rem 1rem;
+  margin-top: 7rem;
+}
