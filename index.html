@@ -11,11 +11,29 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>All awesome books</h1>
-    <div id="books-collection">
-      
-    </div>
-    <hr>
+    <!-- HEADER -->
+    <header>
+      <h2 class="page-heading">Awesome Books</h2>
+      <nav>
+        <ul class="nav-list">
+          <li class="list-item" id="nav-item1">List</li>
+          <li><hr></li>
+          <li class="list-item1" id="nav-item2">Add new</li>
+          <li><hr></li>
+          <li class="list-item2" id="nav-item3">Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <div id="date"></div>
+
+    <!-- LIST -->
+    <section id="list">
+      <h1>All awesome books</h1>
+      <section id="books-collection">  
+      </section>
+    </section>
+
+    <!-- ADD NEW -->
     <div class="form">
       <h2>Add a new book</h2>
       <form id="book-form">
@@ -27,11 +45,35 @@
           <input type="text" id="new-author" placeholder="Author" class="form-control">
         </div>
         <br>
-        <div>
+        <div class="button-div">
           <button class="adding" type="button" id="add">Add</button>
         </div>
       </form>
     </div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 class="contact-heading">Contact information</h2>
+      <p class="paragraph1">
+        Do you have any questions or you just want to say "hello"?
+      </p>
+      <p class="paragraph2">
+        You can reach out to us!
+      </p>
+      <div class="contact_items">
+        <ul id="contact-info">
+          <li><p>Our email: mail@gmail.com</p></li>
+          <li><p>Our phone number: 042579801</p></li>
+          <li><p>Our address: Birkley 22, 88033 Kampala, Uganda</p></li>
+        </ul>
+      </div>
+        
+      
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <p>Copyright ...</p>
+    </footer>
     <script src="object.js"></script>
   </body>
 </html>

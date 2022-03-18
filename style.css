@@ -10,10 +10,13 @@ body {
 }
 
 #books-collection {
-  border: 2px solid black;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 1rem;
+  border: 3px solid black;
+  margin: 1rem;
+}
+
+#author {
+  font-weight: 800;
+  font-size: 20px;
 }
 
 .item {
@@ -29,13 +32,13 @@ body {
 
 hr {
   background-color: black;
-  height: 1.5px;
-  width: 90px;
-  margin: 0 auto;
+  margin: auto;
+  width: 1px;
+  height: 30px;
 }
 
 .adding {
-  margin-left: 35%;
+  margin-left: 38%;
   padding: 0.5% 2%;
 }
 
@@ -50,10 +53,18 @@ hr {
   background-color: #fff;
 }
 
+.button-div .adding {
+  border: 3px solid black;
+  font-size: 20px;
+  font-weight: 800;
+}
+
 .delete {
   margin-top: auto;
   margin-bottom: auto;
   vertical-align: middle;
+  font-size: 20px;
+  border: 3px solid black;
 }
 
 p {
@@ -64,6 +75,10 @@ p {
 
 .form-control {
   width: 40%;
+  border: 3px solid #000;
+  color: #000;
+  font-size: 18px;
+  font-weight: 800;
 }
 
 h2 {
@@ -73,4 +88,108 @@ h2 {
 
 .form-control::placeholder {
   color: black;
+}
+
+.form {
+  margin-top: 10rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-right: 0.5rem;
+  border: 3px solid #000;
+  margin-top: 1rem;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.page-heading {
+  padding-left: 0.5rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-list li {
+  color: black;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.list-item:hover,
+.list-item1:hover,
+.list-item2:hover {
+  cursor: pointer;
+}
+
+footer p {
+  display: flex;
+  padding: 0 1rem;
+  font-size: 23px;
+}
+
+#date {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+  font-size: 18px;
+  padding-top: 1rem;
+  font-weight: 800;
+}
+
+#list,
+.form,
+#contact {
+  display: none;
+}
+
+.contact-heading {
+  font-size: 34px;
+  padding: 2rem 0 2rem 0;
+}
+
+.paragraph1 {
+  font-size: 22px;
+}
+
+.paragraph2 {
+  margin-right: 19rem;
+  font-size: 23px;
+}
+
+.contact_items {
+  margin: 0 auto;
+  width: 500px;
+}
+
+#contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 0;
+  padding-left: 5rem;
+}
+
+#contact-info li p {
+  font-size: 20px;
+}
+
+footer {
+  border: 3px solid black;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 1rem;
+  margin-top: 10px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 96%;
 }
