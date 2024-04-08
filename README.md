@@ -9,8 +9,8 @@ This is a project on a book list app that adds, removes and stores books in loca
 
 ## Live Demo
 
-Click [here](https://kemigabocatherine.github.io/Awesome-books/){:target="_blank"} to view the page.
-Click [here](https://www.geeksforgeeks.org/){:target="_blank"} 
+Click [here](https://kemigabocatherine.github.io/Awesome-books/) to view the page.
+
 
 ## Getting Started
 
